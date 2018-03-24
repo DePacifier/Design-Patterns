@@ -1,0 +1,51 @@
+                                              Observer Pattern
+                                              =================
+
+General Description
+-------------------
+The observer pattern is useful when a design is required to inform other of an change of data or a new information has arrived and to forward or let them access the data from the provider.
+
+My Program
+==========
+
+Purpose
+-------
+This simple program is for a a wather app. 
+There exist an ideal weather station which provides data to our weather app, our weather app have got different display units that will show descriptions like the current temperature, statistics of the weather and what kind of weather the day will have by getting the data that the new weather data the weather station provides.
+
+
+My Implementation
+-----------------
+- The program is implemented using three basic interface classes called Subject, DisplayElement and Observer. The subject class holds the necessary methods that a provider should have. It contains methods for registering the observers, removing observers and notifying them which will be implmented.The observer class used for implementing an update method all the display units to update their information and the DisplayElement class used for implmenting the display units displayed information.
+
+- A weatherdata class was created extending the subject interface so that it can forward the message to the observers.
+	The weatherdata class implements the notifyobservers method and always call the observers update method for 	them to get the new data whenever its data(temperature, pressure,....) is changed.
+
+-Both the observer and displayelement interfaces were implemented on the 3 display units :
+	1. CurrentConditions 
+        2. StatisticsDisplay
+	3. ForecastDisplay
+
+By implementing the interfaces the display units implement their update and display functions to their advantage.
+
+Verification
+============
+As described earlier the program uses an obevor pattern enabling it to forward new information or updates to the observers from the subject which was the weatherdata.
+
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
+The main class is: ObservorPattern.java
+The implementation was tested using this simple code:
+
+	WeatherData weatherData = new WeatherData();
+        
+        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData); //creating the object
+        
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData); //creating the object
+        
+        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData); //creating the object
+        
+        weatherData.setMeasurements(80, 65, 30.4f); //setting new data to weatherdata
+        weatherData.setMeasurements(82, 70, 29.2f);
+        weatherData.setMeasurements(78, 90, 29.2f);

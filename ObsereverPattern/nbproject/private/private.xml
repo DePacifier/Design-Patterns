@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/ObsereverPattern.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/WeatherData.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/Subject.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/Observer.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/DisplayElement.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/CurrentConditionsDisplay.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/StatisticsDisplay.java</file>
+            <file>file:/C:/Users/Milky/Documents/NetBeansProjects/ObsereverPattern/src/obsereverpattern/ForecastDisplay.java</file>
+        </group>
+    </open-files>
+</project-private>
